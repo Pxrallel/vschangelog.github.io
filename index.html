@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Changelog</title>
+    <style>
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            line-height: 1.6;
+            -webkit-text-size-adjust: 100%;
+            margin: 80px!important;
+            margin-top: 20px!important;
+            margin-bottom: 20px!important;
+            max-width: 1600px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+            background-color: #1e1e1e;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .version {
+            font-weight: 400;
+            margin-top: 40px; /* Increased top margin for more separation */
+            margin-bottom: 20px;
+            font-size: 1.7rem; /* Increased font size */
+            /*line-height: 1.3;*/
+        }
+
+        .date {
+            color: #666;
+            font-size: 14px; /* Increased font size */
+        }
+
+        .change-entry {
+            margin-left: 20px;
+            padding: 0; /* Removed padding from change data */
+        }
+
+        li {
+            padding-bottom: 30px; /* Added padding for separation between versions */
+        }
+    </style>
+</head>
+<body>
+    <h1>Changelog</h1>
+    <ul id="update-list">
+        <!-- Update list will be populated by JavaScript -->
+    </ul>
+
+    <script>
+        const updateList = document.getElementById("update-list");
+
+        const updates = [
+        {
+            version: "Version 1.0.4 - BETA",
+            date: "11/30/2024",
+            changes: [
+              "To be written...",
+            ]
+          },
+          {
+            version: "Version 1.0.3",
+            date: "04/19/2023",
+            changes: [
+              "Added:",
+              "• Profile picture border.",
+              "• Dropdown menu to Target Logger with various options.",
+              "• Live chat room.",
+              "Removed:",
+              "• Delete and copy button from Target Logger.",
+              "Improved:",
+              "• Method list (now only shows 10 method names at a time).",
+              "• Minor security improvements.",
+              "Fixed:",
+              "• Method list extending beyond its intended size."
+            ]
+          },
+          {
+            version: "Version 1.0.2",
+            date: "03/13/2023",
+            changes: [
+			  "Added:",	
+              "• IP Blacklisting.",
+              "• Discord RPC.",
+              "• Custom notifications.",
+              "• Splash screen with random fact.",
+              "• Notification sounds.",
+              "• Orange theme preset.",
+              "• Custom scroll bars to multiple scrollable UI elements.",
+              "• Some minor UI adjustments.",
+              "• IP Lookup to attack hub.",
+              "• Refresh button to news panel.",
+              "• Feedback Tab",
+              "‎ ‎ ‎ ‎ • User feedback rating & review.",
+              "‎‎ ‎ ‎ ‎ • User suggestions.",
+              "• Settings Submenu",
+              "‎ ‎ ‎ ‎ • Application Tab",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Auto login toggle.",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Always on top toggle.",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Restore default settings.",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Open settings folder shortcut.",
+              "‎ ‎ ‎ ‎ • Account Tab",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Login history.",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Total logins display.",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Hide/Unhide login history.",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ • Delete all login history.",
+              "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎",
+              "• Hardware ID display.",
+              "Removed:",
+              "• Account info from settings (now located in Account settings).",
+              "• Password reset from settings (now located in Account settings).",
+              "• Unnecessary code.",
+              "Improved:",
+              "• Relocated settings folder to Documents from AppData.",
+              "• Register dialog.",
+              "• UI scaling for smaller resolution displays (may not work for all).",
+              "• Theme loading.",
+              "• Auto updating.",
+              "• Expire display, now indicates if you have lifetime.",
+              "• Backend code.",
+              "• Tooltips.",
+              "Fixed:",
+              "• Various UI bugs.",
+              "• Various typos."
+            ]
+          },
+          {
+            version: "Version 1.0.1",
+            date: "02/04/2023",
+            changes: [
+              "Added:",
+              "• Renamed 'Enemy Logger' to 'Target Logger'.",
+              "• Total targets.",
+              "• Minor UI changes.",
+              "Removed:",
+              "• About a halfpage essay of unused code.,",
+              "Improved:",
+              "• Reworked registration.",
+              "• More stability improvements.",
+              "Fixed:",
+              "• Various bug fixes."
+            ]
+          },
+          {
+            version: "Version 1.0.0",
+            date: "01/31/2023",
+            changes: [
+              "Added:",
+              "• New Authentication.",
+              "• New UI (User Interface).",
+              "• [Dashboard]",
+              "‎ ‎ News types, My attacks, Plan Info, Discord & Telegram links.",
+              "‎",
+              "• [Attack Hub]",
+              "‎ ‎ Server loading, Method count, Top method, API request status, Attack logs.",
+              "‎",
+              "• [Tools]",
+              "‎ ‎ Geo Location, Single port scanner, DNS lookup.",
+              "‎",
+              "• [Settings]",
+              "‎ ‎ Password reset, User ID display, Level display, Color options.",
+              "Removed:",
+              "• Friend logger.",
+              "• Nmap Scan.",
+              "• Music Hub.",
+              "• Plan Hub.",
+              "• Upgrade Hub.",
+              "• Total attacks sent (per session).",
+              "• Attack History Hub (now in Attack Hub).",
+              "• Discord RPC.",
+              "• Panel rating.",
+              "• Support Tickets.",
+              "• IP Blacklisting.",
+              "Improved:",
+              "• Auto Updating.",
+              "• Load times.",
+              "• Stability.",
+              "• Config reader.",
+              "Fixed:",
+              "• Geo locate tool crashing/returning an error.",
+              "• Method loading causing a crash/error.",
+              "• News loading causing a crash/error.",
+              "• Login form not reading login configs."
+            ]
+          }
+        ];
+
+        updates.forEach((update) => {
+          const li = document.createElement("li");
+          li.innerHTML = `<strong class="version">${update.version}</strong> <span class="date">${update.date}</span>`;
+          const changesList = document.createElement("ul");
+          update.changes.forEach((change) => {
+            const changeLi = document.createElement("li");
+            changeLi.textContent = change;
+            changeLi.classList.add("change-entry"); /* Added class for styling */
+            changesList.appendChild(changeLi);
+          });
+          li.appendChild(changesList);
+          updateList.appendChild(li);
+        });
+
+        document.getElementById("time-display").textContent += " " + new Date().toLocaleTimeString();
+    </script>
+</body>
+</html>
